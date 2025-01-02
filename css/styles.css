@@ -1,0 +1,223 @@
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/roboto-v32-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/roboto-v32-latin-500.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/roboto-v32-latin-700.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  src: url('../fonts/roboto-v32-latin-900.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/play-v19-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/play-v19-latin-700.woff2') format('woff2');
+}
+
+:root {
+  --color-bg: #ffffff;
+  --color-black: #000000;
+  --color-primary: #2b7fff;
+  --color-secondary: #011c44;
+  --color-primary-gray: #4a4a4a;
+  --color-secondary-gray: #747272;
+  --color-yellow: #ffd02b;
+
+  --font-primary: 'Roboto', sans-serif;
+  --font-secondary: 'Play', sans-serif;
+}
+
+/* Base */
+* {
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+}
+
+body {
+  font-family: var(--font-primary);
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.73;
+  color: var(--color-secondary);
+  background-color: var(--color-bg);
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+
+address {
+  font-style: normal;
+}
+
+button {
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/* Button */
+.button {
+  width: 219px;
+  height: 53px;
+  border: 2px solid var(--color-primary);
+  border-radius: 32px;
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--color-bg);
+  background-color: var(--color-primary);
+}
+
+.button:hover {
+  color: var(--color-secondary);
+  background-color: transparent;
+}
+
+/* Logo */
+.logo {
+  width: 74px;
+  height: 42px;
+  transition: transform 0.3s;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+/* Link */
+.link {
+  font-size: 18px;
+}
+
+.link:hover {
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+/* Social-link */
+.social-link {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.3s;
+}
+
+.social-link:hover {
+  transform: scale(1.1);
+}
+
+/* Section ALL */
+.section-title {
+  font-family: var(--font-secondary);
+  font-weight: 700;
+  font-size: 64px;
+  color: var(--color-secondary);
+}
+
+.section-title .accent {
+  color: var(--color-primary);
+}
+
+.section-title .capitalize {
+  text-transform: capitalize;
+}
+
+.section-title.center {
+  text-align: center;
+}
+
+/* Section hero */
+.hero-subtitle {
+  font-size: 18px;
+}
+
+.hero-title {
+  font-family: var(--font-secondary);
+  font-weight: 700;
+  font-size: 140px;
+  line-height: 0.81;
+  text-transform: capitalize;
+  color: var(--color-primary);
+}
+
+.hero-desc {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--color-primary-gray);
+}
+
+/* Section choose */
+.choose-item {
+  width: 316px;
+  height: 181px;
+  border-radius: 32px;
+
+  box-shadow: 0 4px 4px 0 rgba(168, 198, 245, 0.38);
+  background: var(--color-bg);
+}
+
+.choose-text {
+  font-size: 18px;
+  line-height: 1.33;
+  color: var(--color-black);
+}
+
+/* Footer */
+.footer {
+  color: var(--color-bg);
+  background-color: var(--color-secondary);
+}
+
+/* Adress */
+.adress-link {
+  font-size: 16px;
+}
+
+.adress-link:hover {
+  color: var(--color-secondary-gray);
+}
+
+.adress-copyright {
+  font-size: 13px;
+  color: var(--color-secondary-gray);
+}
